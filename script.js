@@ -22,6 +22,7 @@ let numButton = document.getElementsByClassName('numbutton');
 let operateButton = document.getElementsByClassName('operatebutton');
 let equalsButton = document.getElementById('equal');
 let display = document.getElementById('display');
+let clearButton = document.getElementById('clear');
 let userInput1 = ''
 let userInput2 = ''
 let userOperator = ''
@@ -65,3 +66,13 @@ equalsButton.addEventListener('click', function(){
 
    })
 
+function clearDisplay(){
+    userInput1 = 0
+    userInput2 = 0
+    userOperator = ''
+    display.innerText = 0
+}
+
+clearButton.addEventListener('click', function(){    
+    clearDisplay()
+   })
