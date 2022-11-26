@@ -7,6 +7,12 @@ body {
     display: inline-block;
 }
 
+.pressed {
+    transform: scale(1.1);
+    border-color: #f4f4f4;
+    box-shadow: 0 0 1rem #7e7e7e;
+}
+
 .calculator {
     display: flex;
     flex-direction: column;
@@ -21,10 +27,10 @@ body {
 background-color: lightgrey;
 outline: auto;
 text-align: center;
-padding: 10px;
+padding: 3px;
 margin-bottom: 22px;
 text-align:right;
-font-size: 25px;
+font-size: 35px;
 }
 
 .button {
@@ -32,6 +38,7 @@ font-size: 25px;
     outline: auto;
     text-align: center;
     padding: 5px;
+    transition: all .07s ease;
 }
 
 #firstRow {
@@ -46,7 +53,7 @@ font-size: 25px;
 }
 
 .firstRow.empty {
-    flex-grow: 8;
+    flex-grow: 9;
 }
 
 #secondRow {
