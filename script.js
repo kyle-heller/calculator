@@ -110,20 +110,20 @@ clearButton.addEventListener('click', function(){     //clear button click liste
    })
 
 
-const buttons = document.querySelectorAll('.button');
+// const buttons = document.querySelectorAll('.button');
 
-window.addEventListener('mousedown', function (e) {
-if (e.target.classList.contains('button') === true) {
-e.target.classList.add('pressed');
-}
-})
-
-
-
-function removeTransition(e) { //remove transition function
-    if (e.propertyName !== 'transform') return // skip it if it's not a transform
-    this.classList.remove('pressed')
-   }
+// window.addEventListener('mousedown', function (e) {
+// if (e.target.classList.contains('button') === true) {
+// e.target.classList.add('pressed');
+// }
+// })
 
 
-buttons.forEach(button => button.addEventListener('transitionend', removeTransition)); //remove transition listener
+
+// function removeTransition(e) { //remove transition function
+//     if (e.propertyName !== 'transform') return // skip it if it's not a transform
+//     this.classList.remove('pressed')
+//    }
+
+
+// buttons.forEach(button => button.addEventListener('transitionend', removeTransition)); //remove transition listener
