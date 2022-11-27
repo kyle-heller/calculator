@@ -5,6 +5,7 @@
 
 body {
     display: inline-block;
+    display: flex;
 }
 
 .pressed {
@@ -17,10 +18,10 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: 200px;
-    height: 275px;
-    padding: 20px;
-    background-color: lightslategrey
+    height: 75vh;
+    padding: 30px;
+    background-color: lightslategrey;
+    align-items: stretch;
 }
 
 #display {
@@ -31,6 +32,7 @@ padding: 3px;
 margin-bottom: 22px;
 text-align:right;
 font-size: 35px;
+flex: 1;
 }
 
 .button {
@@ -45,21 +47,25 @@ font-size: 35px;
     display: flex;
     gap: 20px;
     padding-bottom: 15px;
+    flex: 1;
 
 }
 
 .firstRow {
     flex-grow: 1;
+    gap: 20px;
 }
 
 .firstRow.empty {
-    flex-grow: 9;
+    flex-grow: 3;
+    gap: 20px;
 }
 
 #secondRow {
     display: flex;
     gap: 20px;
     padding-bottom: 15px;
+    flex: 1;
 }
 .secondRow {
     flex: 1;
@@ -69,6 +75,7 @@ font-size: 35px;
     display: flex;
     gap: 20px;
     padding-bottom: 15px;
+    flex: 1;
 }
 
 .thirdRow {
@@ -79,6 +86,7 @@ font-size: 35px;
     display: flex;
     gap: 20px;
     padding-bottom: 15px;
+    flex: 1;
 }
 
 .fourthRow {
@@ -89,7 +97,9 @@ font-size: 35px;
     display: flex;
     gap: 20px;
     padding-bottom: 15px;
+    flex: 1;
 }
 .fifthRow {
+    flex: 1;
     flex: 1;
 }
