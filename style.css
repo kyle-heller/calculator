@@ -31,7 +31,7 @@ text-align: center;
 padding: 3px;
 margin-bottom: 22px;
 text-align:right;
-font-size: 35px;
+font-size: 80px;
 flex: 1;
 }
 
@@ -41,6 +41,7 @@ flex: 1;
     text-align: center;
     padding: 5px;
     transition: all .07s ease;
+    font-size: 35px;
 }
 
 #firstRow {
@@ -57,7 +58,7 @@ flex: 1;
 }
 
 .firstRow.empty {
-    flex-grow: 3;
+    flex-grow: 4;
     gap: 20px;
 }
 
